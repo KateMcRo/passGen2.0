@@ -1,0 +1,48 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+.wiz {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    position: relative;
+}
+
+.eyes {
+    width: 7rem;
+    transform: translateY(-3rem);
+}
+
+.eyes, .eye, img {
+    position: absolute;
+}
+
+.eye {
+    display: inline-block;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+}
+
+
+.left, .right {
+    right: 50%;
+}
+
+.left {
+    right: 74%; 
+    /* border: solid blue; */
+
+}
+
+.right {
+    left: 50%;
+    /* border: solid red; */
+
+}
+
+
