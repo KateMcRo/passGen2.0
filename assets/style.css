@@ -8,8 +8,9 @@ body {
 .wiz {
     display: grid;
     place-items: center;
-    min-height: 100vh;
+    min-height: 70vh;
     position: relative;
+    
 }
 
 .eyes {
@@ -35,14 +36,58 @@ body {
 
 .left {
     right: 74%; 
-    /* border: solid blue; */
-
 }
 
 .right {
     left: 50%;
-    /* border: solid red; */
-
 }
 
 
+.gen {
+    position: absolute;
+    transform: translateY(237px);
+    border: none;
+}
+
+.number input[type="number"] {
+    width: 50px;
+    text-align: center;
+} 
+
+.btns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.length {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#length {
+    width: 100px;
+    padding-left: 1rem;
+    margin-left: 1rem;
+}
+
+textarea {
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    border: 2px dashed #c0c7cf;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.chars {
+    border-bottom: 2px dashed #c0c7cf;
+}
+
+.macondo-regular {
+    font-family: "Macondo", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  
