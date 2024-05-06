@@ -28,23 +28,25 @@
               placeholder="Where the ✨Magic✨ happens"
               aria-label="Generated Password"></textarea>
           </div>
+        
+        <!-- Form -->
         <form>
             <div class="card-body chars">
-            <p class="card-text macondo-regular ">Included Characters:</p>
+            <p class="card-text macondo-regular ">Choose at least one character type:</p>
             <div class="row">
                 <div class="col">
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="uppercase">
+                        <input class="form-check-input" type="checkbox" value="uppercase">
                         <label class="form-check-label" for="uppercase">
-                          Uppercase Letters
+                          Uppercase
                         </label>
                     </div>
                 </div>
                 <div class="col">
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="lowercase">
+                        <input class="form-check-input" type="checkbox" value="lowercase">
                         <label class="form-check-label" for="lowercase">
-                          Lowercase Letters
+                          Lowercase
                         </label>
                     </div>
                 </div>
@@ -53,7 +55,7 @@
             <div class="row">
                 <div class="col">
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="num">
+                        <input class="form-check-input" type="checkbox" value="number">
                         <label class="form-check-label" for="num">
                           Numbers
                         </label>
@@ -61,9 +63,9 @@
                 </div>
                 <div class="col">
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="special">
+                        <input class="form-check-input" type="checkbox" value="special">
                         <label class="form-check-label" for="special">
-                          Special Characters
+                          Special
                         </label>
                     </div>
                 </div>
@@ -76,18 +78,13 @@
             </div>
 
             <div class="card-body btns">
-
-            <button type="button" class="btn btn-primary macondo-regular">Generate Password</button>
-            <button type="button" class="btn btn-secondary macondo-regular" disabled>Copy Password</button>
+                <button type="submit" id="generate" class="btn btn-primary macondo-regular" disabled >Generate Password</button>
+                <button type="button" id="copy" class="btn btn-secondary macondo-regular" disabled>Copy Password</button>
             </div>
         </form>
       </div>
 
-    </div>
-
-    <!-- Form -->
-    
-
+    </div>   
     <script src="./assets/script.js"></script>
   </body>
 </html>
