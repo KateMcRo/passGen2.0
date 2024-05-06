@@ -14,10 +14,10 @@ const copyButton = document.getElementById("copy");
 
 // Event Listeners
 document.addEventListener("mousemove", handleMouseMove);
-form.addEventListener("submit", handleFormSubmit);
 document.querySelectorAll('[type="checkbox"]').forEach((checkbox) => {
   checkbox.addEventListener("change", handleCheckChange);
 });
+form.addEventListener("submit", handleFormSubmit);
 copyButton.addEventListener("click", handleCopy);
 
 // Functions

@@ -1,3 +1,11 @@
+:root {
+    --drk: #1C1733;
+    --deep: #3F3249;
+    --mid: #6C6A77;
+    --pop: #9ECAD9;
+
+}
+
 body {
     width: 100vw;
     height: 100vh;
@@ -8,9 +16,8 @@ body {
 .wiz {
     display: grid;
     place-items: center;
-    min-height: 70vh;
+    min-height: 65vh;
     position: relative;
-    
 }
 
 .eyes {
@@ -46,7 +53,8 @@ body {
 .gen {
     position: absolute;
     transform: translateY(237px);
-    border: none;
+    border: solid .3rem var(--drk);
+    color: var(--drk);
 }
 
 .number input[type="number"] {
@@ -75,13 +83,13 @@ textarea {
     width: 100%;
     padding: 1rem;
     text-align: center;
-    border: 2px dashed #c0c7cf;
+    border: 2px dashed var(--deep);
     border-radius: 6px;
     overflow: hidden;
 }
 
 .chars {
-    border-bottom: 2px dashed #c0c7cf;
+    border-bottom: 2px dashed var(--deep);
 }
 
 .macondo-regular {
@@ -90,3 +98,21 @@ textarea {
     font-style: normal;
   }
   
+  .form-check-input {
+    border-color: var(--mid);
+  }
+
+  .form-check-input:checked {
+    border-color: var(--pop);
+    background-color: var(--pop);
+  }
+
+  #generate {
+    background-color: var(--drk);
+    border-color: var(var(--drk))
+  }
+
+  #copy {
+    background-color: var(--pop);
+    border-color: var(--pop)
+  }
